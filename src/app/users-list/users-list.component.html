@@ -1,0 +1,29 @@
+<h3>Lista de usuarios</h3>
+
+<ul>
+  <li *ngFor="let user of users">
+    <div class="first">
+      <img [src]="user.picture">
+      <p>{{user.name}} {{user.surname}}</p>
+    </div>
+    <div class="second">
+      <button class="confirm" routerLink="detail/{{user.id}}">Editar</button>
+      <button class="error" (click)="deleteUser($event, user.id)">Eliminar</button>
+    </div>
+  </li>
+</ul>
+
+<hr>
+
+<h5>Añadir nuevo nuevo usuario</h5>
+
+<div class="add">
+  <div class="wrap-form">
+    <input type="text" placeholder="Nombre" #name>
+    <input type="text" placeholder="Apellido" #surname>
+    <input type="text" placeholder="Email" #email>
+    <input type="number" placeholder="Edad" #age>
+    <input type="text" placeholder="Género" #gender>
+    <button class="success" (click)="postUser(name.value, surname.value, email.value, age.value, gender.value)">Añadir</button>
+  </div>
+</div>

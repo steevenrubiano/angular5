@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+button.success {
+  background-color: green;
+}
+
+button.error {
+  background-color: red;
+}
+
+button.confirm {
+  background-color: blue;
+}

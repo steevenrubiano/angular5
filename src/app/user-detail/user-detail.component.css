@@ -1,0 +1,25 @@
+div.data {
+  display: flex;
+}
+
+div.data div {
+  flex: 1;
+}
+
+div.edit {
+  display: flex;
+}
+
+div.edit div.wrap-form {
+  display: flex;
+  flex-direction: column;
+}
+
+div.edit input, div.edit button {
+  margin: 5px;
+}
+
+div.go-back {
+  display: flex;
+  justify-content: flex-end;
+}
